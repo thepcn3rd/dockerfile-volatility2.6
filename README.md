@@ -6,18 +6,19 @@ This Docker image aims to make its installation and use very smooth, on any syst
 
 ## Usage
 
-It is best to declare a shell function inside your favorite shell (`.bashrc` or `.zshrc`) to make it easy to use:
+Create a shell script called vol26 with the below contents:
 
 ```
-function v26() {
-  docker run --rm --user=$(id -u):$(id -g) -v "$(pwd)/images":/dumps:ro,Z -ti phocean/volatility $@
-}
+#!/bin/bash
+
+docker run --rm --user=$(id -u):$(id -g) -v "$(pwd)/images":/dumps:ro,Z -ti phocean/volatility $@
+
 ```
 
 Then, you can simply use it as follows:
 
 ```
-➤  volatility -f /dumps/dump.vmem imageinfo
+➤  ./vol26 -f /dumps/memory_dump.vmem imageinfo
 ```
 
 
