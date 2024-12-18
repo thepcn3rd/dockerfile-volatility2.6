@@ -9,7 +9,7 @@ This Docker image aims to make its installation and use very smooth, on any syst
 It is best to declare a shell function inside your favorite shell (`.bashrc` or `.zshrc`) to make it easy to use:
 
 ```
-function volatility() {
+function v26() {
   docker run --rm --user=$(id -u):$(id -g) -v "$(pwd)":/dumps:ro,Z -ti phocean/volatility $@
 }
 ```
