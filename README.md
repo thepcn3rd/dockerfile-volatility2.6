@@ -10,7 +10,7 @@ It is best to declare a shell function inside your favorite shell (`.bashrc` or 
 
 ```
 function v26() {
-  docker run --rm --user=$(id -u):$(id -g) -v "$(pwd)":/dumps:ro,Z -ti phocean/volatility $@
+  docker run --rm --user=$(id -u):$(id -g) -v "$(pwd)/images":/dumps:ro,Z -ti phocean/volatility $@
 }
 ```
 
