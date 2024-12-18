@@ -29,6 +29,8 @@ python2 -m pip install -U git+https://github.com/volatilityfoundation/volatility
 The vol.py file is located in /home/<user>/.local/bin.  You can reference the above article of how to add it to your path variable...
 
 
+
+
 ## Use Docker image
 
 [Volatility](https://github.com/volatilityfoundation/volatility) is a famous DFIR memory analysis framework.
@@ -52,5 +54,6 @@ Then, you can simply use it as follows:
 ➤  ./vol26 -f /dumps/memory_dump.vmem imageinfo
 ```
 
+If you run imageinfo is takes a little time and then the other commands run fairly seamlessly in a docker.
 
 
