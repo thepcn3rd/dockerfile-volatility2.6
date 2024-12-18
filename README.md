@@ -1,6 +1,7 @@
 # Volatility 2.6
 
-## Reference to install on Vol2 on Ubuntu 22.04.5: https://seanthegeek.net/1172/how-to-install-volatility-2-and-volatility-3-on-debian-ubuntu-or-kali-linux/
+## Reference to Install Vol2 on Ubuntu 22.04.5 
+https://seanthegeek.net/1172/how-to-install-volatility-2-and-volatility-3-on-debian-ubuntu-or-kali-linux/
 
 I will run the below install as referenced above from the user account that I create when I installed Ubuntu.  I did not use root...
 
