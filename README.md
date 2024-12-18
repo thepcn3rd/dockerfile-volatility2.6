@@ -20,11 +20,5 @@ Then, you can simply use it as follows:
 ➤  volatility -f /dumps/dump.vmem imageinfo
 ```
 
-## Building
 
-You can build the image locally with:
-
-```
-docker build -t phocean/volatility .
-```
 
